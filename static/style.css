@@ -3,22 +3,33 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+html, body {
+  height:90%;
+}
+
 * {
-  box-sizing: border-box;
+  margin: 0;
 }
 
 .column {
   float: left;
-  width: 33.33%;
+  width: 31.7%;
   padding: 10px;
-  height: 200px;
+  height: 130px;
+}
+.page-wrap {
+  min-height: 100%;
+  /* equal to footer height */
+  margin-bottom: -15px;
+}
+.page-wrap:after {
+  content: "";
+  display: block;
+}
+.site-footer, .page-wrap:after {
+  height: 142px;
 }
 
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
 
 shop {
   display: block;
