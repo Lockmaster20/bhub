@@ -9,6 +9,9 @@ loja = lojaOnline()
 def index():
     return render_template('index.html', loja=loja)
 
+@app.route('/carreiras')
+def carreiras():
+    return render_template('carreiras.html', loja=loja)
 
 @app.route('/encomenda')
 def encomenda():
